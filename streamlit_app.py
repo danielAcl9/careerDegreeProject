@@ -1,5 +1,4 @@
 import streamlit as st
-import sklearn
 from sklearn.ensemble import RandomForestRegressor
 import numpy as np
 import matplotlib.pyplot as plt
