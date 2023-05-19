@@ -28,7 +28,7 @@ input2 = st.number_input('Input Value 2', value=0.0)
 input3 = st.number_input('Input Value 3', value=0.0)
 input4 = st.number_input('Input Value 4', value=0.0)
 input5 = st.number_input('Input Value 5', value=0.0)
-input6 = st.number_input('Input Value 5', value=0.0)
+input6 = st.number_input('Input Value 6', value=0.0)
 
 inputs = [input1, input2, input3, input4, input5, input6]
 
