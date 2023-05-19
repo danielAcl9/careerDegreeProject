@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 @st.cache
 def load_model():
     import joblib
-    model = joblib.load('model.pkl') 
+    model = joblib.load('finalized_model.pkl') 
     return model
 
 # This function makes the forecast using the provided model and inputs
