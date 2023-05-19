@@ -43,8 +43,8 @@ if st.button('Forecast'):
     lower_bound = forecast[0] - 0.1 * forecast[0]
     upper_bound = forecast[0] + 0.1 * forecast[0]
     
-    st.write(f'MinTime: {lower_bound[0]}')
-    st.write(f'MaxTime: {upper_bound[0]}')
+    st.write(f'MinTime: {lower_bound}')
+    st.write(f'MaxTime: {upper_bound}')
 
     fig, ax = plt.subplots()
     ax.plot(forecast[0], color='blue', label='Predicted')
