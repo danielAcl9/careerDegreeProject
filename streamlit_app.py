@@ -35,12 +35,16 @@ inputs = [input1, input2, input3, input4, input5, input6]
 # Make prediction and get confidence interval
 if st.button('Forecast'):
     forecast = make_forecast(model, inputs)
-    st.write(f'Expected Time: {forecast[0]}')
+    st.write(f'Expected Average Time: {forecast[0]}')
+    
 
     # Assuming the model can return prediction intervals
     # This may need to be adjusted based on your model and data
     lower_bound = forecast[0] - 0.1 * forecast[0]
     upper_bound = forecast[0] + 0.1 * forecast[0]
+    
+    st.write(f'MinTime: {lower_bound[0]}')
+    st.write(f'MaxTime: {upper_bound[0]}')
 
     fig, ax = plt.subplots()
     ax.plot(forecast[0], color='blue', label='Predicted')
