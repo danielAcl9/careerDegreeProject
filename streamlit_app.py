@@ -23,11 +23,11 @@ model = load_model()
 st.title('Surgery Time Forecasting System')
 
 # Input cells for user input
-input1 = st.number_input('Patient age', value=0.0)
-input2 = st.number_input('Patient gender', value=0.0)
-input3 = st.number_input('Surgery', value=0.0)
-input4 = st.number_input('Surgery preparation time', value=0.0)
-input5 = st.number_input('Anesthesia', value=0.0)
+input1 = st.number_input('Patient age (0 - 97)', value=0.0)
+input2 = st.number_input('Patient gender (0->F, 1->M)', value=0.0)
+input3 = st.number_input('Surgery (4 - 2738', value=0.0)
+input4 = st.number_input('Surgery preparation time (5 - 990)', value=0.0)
+input5 = st.number_input('Anesthesia (0 - 78)', value=0.0)
 
 
 inputs = [input1, input2, input3, input4, input5]
