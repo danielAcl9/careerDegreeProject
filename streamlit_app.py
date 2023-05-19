@@ -30,7 +30,7 @@ input4 = st.number_input('Surgery preparation time', value=0)
 input5 = st.number_input('Anesthesia', value=0)
 
 
-inputs = [input1, input2, input3, input4, input5, input6]
+inputs = [input1, input2, input3, input4, input5]
 
 # Make prediction and get confidence interval
 if st.button('Forecast'):
