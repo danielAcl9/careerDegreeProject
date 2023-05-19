@@ -24,11 +24,11 @@ st.title('Time Forecasting')
 
 # Input cells for user input
 input1 = st.number_input('Patient age', value=0)
-input2 = st.number_input('Surgery preparation time', value=0)
-input3 = st.number_input('Specialty', value=0)
-input4 = st.number_input('Surgery', value=0)
+input2 = st.number_input('Patient gender', value=0)
+input3 = st.number_input('Surgery', value=0)
+input4 = st.number_input('Surgery preparation time', value=0)
 input5 = st.number_input('Anesthesia', value=0)
-input6 = st.number_input('Patient gender', value=0)
+
 
 inputs = [input1, input2, input3, input4, input5, input6]
 
