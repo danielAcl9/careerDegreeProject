@@ -46,9 +46,9 @@ if st.button('Forecast'):
     st.write(f'MinTime: {lower_bound}')
     st.write(f'MaxTime: {upper_bound}')
 
-    fig, ax = plt.subplots()
-    ax.plot(forecast[0], color='blue', label='Predicted')
-    ax.fill_between(np.arange(len(forecast)), lower_bound, upper_bound, color='gray', alpha=0.6, label='Confidence Interval')
-    ax.legend()
+#     fig, ax = plt.subplots()
+#     ax.plot(forecast[0], color='blue', label='Predicted')
+#     ax.fill_between(np.arange(len(forecast)), lower_bound, upper_bound, color='gray', alpha=0.6, label='Confidence Interval')
+#     ax.legend()
 
-    st.pyplot(fig)
+#     st.pyplot(fig)
