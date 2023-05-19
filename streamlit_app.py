@@ -20,22 +20,22 @@ def make_forecast(model, inputs):
 
 model = load_model()
 
-st.title('Time Forecasting')
+st.title('Surgery Time Forecasting System')
 
 # Input cells for user input
-input1 = st.number_input('Patient age', value=0)
-input2 = st.number_input('Patient gender', value=0)
-input3 = st.number_input('Surgery', value=0)
-input4 = st.number_input('Surgery preparation time', value=0)
-input5 = st.number_input('Anesthesia', value=0)
+input1 = st.number_input('Patient age', value=0.0)
+input2 = st.number_input('Patient gender', value=0.0)
+input3 = st.number_input('Surgery', value=0.0)
+input4 = st.number_input('Surgery preparation time', value=0.0)
+input5 = st.number_input('Anesthesia', value=0.0)
 
 
 inputs = [input1, input2, input3, input4, input5]
 
 # Make prediction and get confidence interval
-if st.button('Forecast'):
+if st.button('Make a forecast'):
     forecast = make_forecast(model, inputs)
-    st.write(f'Expected Average Time: {forecast[0]}')
+    st.write(f'Expected Average Time: {forecast[0]} minutes')
     
 
     # Assuming the model can return prediction intervals
@@ -43,8 +43,8 @@ if st.button('Forecast'):
     lower_bound = forecast[0] - 0.1 * forecast[0]
     upper_bound = forecast[0] + 0.1 * forecast[0]
     
-    st.write(f'Minimum time required: {lower_bound}')
-    st.write(f'Maximum time required: {upper_bound}')
+    st.write(f'Minimum time required: {lower_bound} minutes')
+    st.write(f'Maximum time required: {upper_bound} minutes')
 
 #     fig, ax = plt.subplots()
 #     ax.plot(forecast[0], color='blue', label='Predicted')
