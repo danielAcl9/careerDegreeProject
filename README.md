@@ -6,6 +6,7 @@ The primary objective of this thesis project is to develop a standalone prototyp
 **Disclaimer:** This repository contains only the information on the final product, the main code, data analyis and documentation is licensed by the university and the authors. 
 
 **----- OBJECTIVES -----**
+
 **GENERAL AIM:**
 Develop a stand-alone prototype, using data mining techniques, for optimizing operating rooms’ management.
 
